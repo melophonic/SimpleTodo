@@ -6,4 +6,26 @@
     android:layout_height="match_parent"
     tools:context="com.codepath.simpletodo.EditItemActivity">
 
+    <EditText
+        android:id="@+id/etItemText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="Enter item description"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/etItemText"
+        android:onClick="onSaveItem"
+        android:text="Save" />
 </RelativeLayout>
